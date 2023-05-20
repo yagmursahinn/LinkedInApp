@@ -10,7 +10,10 @@ body{
 
 
     .login-wrapper-inner{
-        margin-left: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .heading{
         margin-left: 200px;
@@ -116,7 +119,10 @@ body{
     }
   }
   .google-btn-container {
-    margin-left: 200px;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     
 
    .google-btn {
