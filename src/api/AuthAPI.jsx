@@ -20,8 +20,7 @@ export const LoginAPI = (email, password) => {
 }
 export const RegisterAPI = (email, password) => {
     try{
-
-    let reponse = signInWithEmailAndPassword(auth, email, password)
+    let reponse = createUserWithEmailAndPassword(auth, email, password)
     return response;
     }catch(err){
         return err;
