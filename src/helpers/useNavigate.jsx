@@ -1,11 +1,8 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
-import { useNavigate } from 'react-router-dom';
-import React from 'react';
+let instance = useNavigate();
 
-    let instance = useNavigate();
-   
-    export const navigate = (param) => {
-       instance(param)
-   
-   }
-
+export const navigate = (param) => {
+  instance(param);
+};
