@@ -12,7 +12,7 @@ import {
 export const LoginAPI = (email, password) => {
     try{
 
-    let reponse = signInWithEmailAndPassword(auth, email, password)
+    let reponse = signInWithEmailAndPassword(auth, email, password);
     return response;
     }catch(err){
         return err;

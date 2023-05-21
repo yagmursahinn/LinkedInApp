@@ -14,7 +14,8 @@ export default function RegisterComponent() {
             try{
                 let res = await RegisterAPI(credentails.email, credentails.password)
                 toast.success('Account Created!');
-                NavigationPreloadManager('/home');
+                navigate('/home');
+                localStorage.setItem('userEmail', res.user.email);
             } catch (err) {
               console.log(err);
               toast.error("Cannot Create your Account");
